@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(90deg,rgb(32, 32, 32) 10%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg,rgb(32, 32, 32) 10%, rgb(15, 15, 15) 100%);
 }
 
 h1 {
@@ -38,35 +38,130 @@ a {
 }
 
 main {
-    width: 80%;
-    max-height: 600px;
+    margin-top: 1.5rem;
+    width: 94%;
     display: flex;
     align-items: center;
-    font-size: 20px;
 }
 
 .foto1 {
-    width: 710px;
-    padding-top: 30px;
+    width: 27.3%;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 3.5rem;
     color: rgb(141, 143, 141);
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    display: flex;
+    justify-content: center;
+    padding-right: 5rem;
 }
 
-.divmain {
-    margin-top: 150px;
+p {
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
 }
 
 .paragrafo::first-letter {
+      color: rgb(141, 143, 141);
       font-size: 2em;
       font-weight: bold;
 }
 
 .nome {
-    font-size: 20.4px;
+    color: rgb(141, 143, 141);
+    font-size: 1.7rem;
+}
+
+.divmain {
+    margin-top: -6rem;
+}
+
+.h2projetos {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+}
+
+.h2xp {
+    padding-left: 4rem;
+}
+
+.card-img {
+    border-radius: 1.2rem;
+}
+
+.card {
+    width: 21.9rem;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-body {
+    width: 21.72rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botaoprojeto {
+    border-radius: 1.2rem;
+    margin: 1rem;
+    padding: 8px;
+    background-color: rgb(141, 143, 141)
+}
+
+.divprojetos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.cardsxp {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.divxpp {
+    margin-top: 5rem;
+    border-radius: 1rem;
+    width: 19rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.13);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+    margin-bottom: 1rem;
+}
+
+.h3xp2 {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.3rem;
+}
+
+.h3xp {
+    font-size: 2rem;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.h4xp {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.lixp {
+    padding-right: 2.5rem;
+    display: flex;
+    justify-content: center;
 }
