@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Tagesschrift&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&family=Zen+Tokyo+Zoo&display=swap');
 
 * {
     margin: 0;
@@ -27,6 +28,7 @@ h1 {
 }
 
 a {
+    transition: all 0.3s ease-in-out;
     text-decoration: none;
     padding: 20px;
     font-size: 22px;
@@ -59,7 +61,7 @@ h2 {
     padding-right: 5rem;
 }
 
-p {
+.paragrafo {
     font-size: 1.6rem;
     margin-left: 1.5rem;
 }
@@ -79,10 +81,14 @@ p {
     margin-top: -6rem;
 }
 
+.background {
+    background-color: rgba(141, 143, 141, 0.020)
+}
+
 .h2projetos {
-    margin-top: 3rem;
     margin-bottom: 5rem;
     padding-left: 5rem;
+    padding-top: 3rem;
 }
 
 .h2xp {
@@ -98,7 +104,7 @@ p {
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .card-body {
@@ -164,4 +170,71 @@ p {
     padding-right: 2.5rem;
     display: flex;
     justify-content: center;
+}
+
+.h2cursos {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    padding-top: 4rem;
+}
+
+.divcursos {
+    display: flex;
+}
+
+.card-imgcursos {
+    padding-bottom: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+.card-titlecursos {
+    margin-left: -6rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+.h2footer {
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+}
+
+.divprojetoscursos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 5rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.conteudoskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2skills {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
 }
