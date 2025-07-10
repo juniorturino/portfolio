@@ -8,15 +8,17 @@
 </head>
 <body>
 
+    
     <nav id="navegacao"> <!--Começo do menu de navegação-->
             <h1>Turino Developer</h1>
 
         <div class="links">
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Histórico profissional</a>
-            <a href="#">Formação academica e Cursos</a>
-            <a href="#">Contato</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#skills">Habilidades atuais</a>
+            <a href="#formacao">Formação</a>            
+            <a href="#xp">Experiência profissional</a>
+            <a href="#footer">Contato</a>
         </div>
     </nav> <!--Fim do menu de navegação-->
 
@@ -27,15 +29,19 @@
             <img class="foto1" src="/img/eu.png" alt="uma imagem de Turino">
 
         <div class="divmain">
-            <h2>Desenvolvedor Front-End</h2> <br><br>
-            <p class="paragrafo"> Olá, me chamo <strong class="nome">Alvimar Turino Junior</strong>. Desde cedo desenvolvi uma paixão por tecnologia e aprendi sozinho a montar e fazer a manutenção do meu pc. Recentemente, descobri minha vocação para a área de tecnologia graças a um amigo que me indicou e me mostrou as oportunidades. Fiquei apaixonado pela área e estou agora focado em desenvolver minhas habilidades em tecnologia. Como profissional em transição de carreira com experiência em produção e atendimento a clientes, estou ansioso para aplicar minhas habilidades e conhecimentos em um novo contexto. <br>
-                 Se você está procurando por alguém criativo, motivado e disposto a aprender, vamos conversar! Estou ansioso para me conectar com profissionais da área e explorar oportunidades de colaboração.
+            <h2 id="sobre">Desenvolvedor Full Stack</h2> <br><br>
+            <p class="paragrafo"> Olá! Sou Turino, e estou em uma jornada emocionante de transição para a área de tecnologia. Depois de anos em outras áreas, descobri minha verdadeira paixão na programação e decidi fazer dessa mudança o próximo capítulo da minha carreira.
+
+Nos últimos meses, tenho me dedicado intensamente ao aprendizado de desenvolvimento web, focando principalmente em tecnologias modernas como React, JavaScript e Node.js. Cada desafio superado me motiva ainda mais a continuar evoluindo nessa área fascinante.
+
+Minha experiência anterior me ensinou a importância da persistência, do trabalho em equipe e da resolução criativa de problemas - habilidades que agora aplico no desenvolvimento de software. Estou sempre em busca de novas oportunidades para aprender e contribuir com projetos inovadores.
             </p>
         </div>
         </main> <!--Fim do conteúdo de principal-->
 
+        <!--Começo da divisão dos PROJETOS-->
         <div class="background">
-            <h2 class="h2projetos">Projetos</h2> <!--Começo da divisão dos PROJETOS-->
+            <h2 id="projetos" class="h2projetos">Projetos</h2>
 
         <div class="divprojetos">
             <div class="card">
@@ -66,9 +72,63 @@
         </div>
         </div>
         </div>
-        <br><br><br> <!--Fim da divisão dos PROJETOS-->
+        <br><br><br> 
+        <!--Fim da divisão dos PROJETOS-->
 
-        <h2 class="h2xp">Experiência profissional</h2> <!--Começo da divisão de experiência PROFISSIONAL-->
+        <!--Começo da divisão de skills-->
+        <h2 id="skills" class="h2skills">Habilidades atuais</h2>
+        <div class="skills">
+        <div class="conteudoskills">
+        <h3 class="h3skills">HTML</h3>
+        <img src="/img/html.png" alt="logohtml" width="70rem" height="70rem">
+        </div>
+        <div class="conteudoskills">
+        <h3 class="h3skills">CSS</h3>
+        <img src="/img/css.png" alt="logocss" width="70rem" height="70rem">
+        </div>
+        <div class="conteudoskills">
+        <h3 class="h3skills">JavaScript</h3>
+        <img src="/img/js.png" alt="logojs" width="70rem" height="70rem">
+        </div>
+        <div class="conteudoskills">
+        <h3 class="h3skills">Bootstrap</h3>
+        <img src="/img/bootstrap.png" alt="logojs" width="70rem" height="70rem">
+        </div>
+        <div class="conteudoskills">
+        <h3 class="h3skills">Git</h3>
+        <img src="/img/git.png" alt="logojs" width="70rem" height="70rem">
+        </div>
+        <div class="conteudoskills">
+        <h3 class="h3skills">Github</h3>
+        <img src="/img/github.png" alt="logojs" width="70rem" height="70rem">
+        </div>
+        </div>
+        <!--Fim da divisão de skills-->
+      
+         <!--Começo da divisão de formação-->
+        <div class="background"> 
+            <h2 id="formacao" class="h2projetos">Formação</h2>
+            
+            <div class="divprojetoscursos">
+            <div class="card">
+                <img class="card-imgcursos" src="/img/UAM.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h3 class="card-titlecursos">Análise e desenvolvimento de sistemas</h3>
+            </div>
+        </div>
+
+                <div class="card">
+                <img class="card-imgcursos" src="/img/udemyblack.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h3 class="card-titlecursos">Web Front-End completo</h3>
+            </div> <br><br><br><br>
+        </div>
+        </div>
+        </div> 
+        <!--Fim da divisão de cursos-->
+
+        <!--Começo da divisão de experiência PROFISSIONAL-->
+        <h2 id="xp" class="h2xp">Experiência profissional</h2>
 
         <div class="cardsxp">
 
@@ -120,97 +180,55 @@
         <ul>
             <li class="lixp">02/2007 à 03/2008</li>
         </div>
-        </div> <br><br><br> <!--Fim da divisão de experiência PROFISSIONAL-->
-
+        </div>
+        <!--Fim da divisão de experiência PROFISSIONAL-->
         
-         <!--Começo da divisão de cursos-->
-        <div class="background"> 
-            <h2 class="h2projetos">Cursos relacionados a T.I.</h2>
-
-        <div class="divprojetoscursos">
-            <div class="card">
-                <img class="card-imgcursos" src="/img/udemy.png" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h3 class="card-titlecursos">Web Front-End completo</h3>
-            </div>
-        </div>
-
-        <div class="card">
-                <img class="card-imgcursos" src="/img/garfield2.png" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h3 class="card-titlecursos">Garfield English Course</h3>
-            </div>
-        </div>
-
-        <div class="card">
-                <img class="card-imgcursos" src="/img/SOS.png" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h3 class="card-titlecursos">S.O.S. Computadores</h3>
-            </div> <br><br><br><br>
-        </div>
-        </div>
-        </div> <!--Fim da divisão de cursos-->
-
-
-        <!--Começo da divisão de skills-->
-        <h2 class="h2skills">Habilidades atuais.</h2>
-        <div class="skills">
-        <div class="conteudoskills">
-        <h3 class="hennypenny">HTML</h3>
-        <img src="/img/html.png" alt="logohtml" width="70rem" height="70rem">
-        </div>
-        <div class="conteudoskills">
-        <h3 class="hennypenny">CSS</h3>
-        <img src="/img/css.png" alt="logocss" width="70rem" height="70rem">
-        </div>
-        <div class="conteudoskills">
-        <h3 class="hennypenny">JavaScript</h3>
-        <img src="/img/js.png" alt="logojs" width="70rem" height="70rem">
-        </div>
-        <div class="conteudoskills">
-        <h3>Bootstrap</h3>
-        <img src="/img/bootstrap.png" alt="logojs" width="70rem" height="70rem">
-        </div>
-        <div class="conteudoskills">
-        <h3>Git</h3>
-        <img src="/img/git.png" alt="logojs" width="70rem" height="70rem">
-        </div>
-        <div class="conteudoskills">
-        <h3>Github</h3>
-        <img src="/img/github.png" alt="logojs" width="70rem" height="70rem">
-        </div>
-        </div>
         
-        <footer class="background">
+        <!--Começo do rodapé/Contatos-->
+        <footer id="footer" class="background">
             <hr>
             <h2 class="h2footer">Contatos</h2>
-            <div class="sociais">
+            
+            <div class="rodape">
+            
+            <div class="sociais links">
+
             <div class="redes"><img src="/img/github.png" alt="logoinstagram" width="70rem">
-            <a href="">Github</a>
+            <a href="https://github.com/juniorturino"target="_blank">Github</a>
             </div>
             
             <div class="redes"><img src="/img/linkedin.png" alt="logofacebook" width="70rem">
-            <a href="">Linkedin</a>
+            <a href="https://www.linkedin.com/in/turinodev/"target="_blank">Linkedin</a>
+            </div>
+            
+            <div class="redes"><img src="/img/whatsapp.png" alt="logofacebook" width="70rem">
+            <a href="https://wa.me/5541987795079"target="_blank">WhatsApp</a>
             </div>
             
             <div class="redes"><img src="/img/instagram.png" alt="logoyoutube" width="70rem">
-            <a href="">Instagram</a>
+            <a href="http://instagram.com/jrturino"target="_blank">Instagram</a>
             </div>
+            
             <div class="redes"><img src="/img/email.png" alt="logoyoutube" width="70rem">
-            <a href="">alvi.turino@gmail.com</a>
+            <a>alvi.turino@gmail.com</a>
             </div>
-            <div class="redes"><img src="/img/localização.gif" alt="logoyoutube" width="70rem">
-            <a href="">Tingui, Curitiba - PR</a>
+            
+            <div class="redes"><img src="/img/localização.png" alt="logoyoutube" width="69rem">
+            <a>Tingui, Curitiba - PR</a>
             </div>
-           
+            </div>
 
-
+            <div class="menufooter links">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#skills">Habilidades atuais</a>
+                <a href="#formacao">Formação</a>
+                <a href="#xp">Experiência profissional</a>                
+                <a href="#footer">Contato</a>
+            </div>
+            </div>    
         </footer>
-        
-        
-
-
-
+        <!--Fim do rodapé/Contatos-->   
 
 </body>
 </html>

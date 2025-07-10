@@ -1,240 +1,270 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Tagesschrift&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&family=Zen+Tokyo+Zoo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&family=Zen+Tokyo+Zoo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Pacifico&family=Rationale&family=Tagesschrift&family=Zen+Tokyo+Zoo&display=swap");
 
 * {
-    margin: 0;
-    color: white;
+  margin: 0;
+  color: white;
 }
 
 body {
-    background: linear-gradient(90deg,rgb(32, 32, 32) 10%, rgb(15, 15, 15) 100%);
+  background: linear-gradient(90deg, rgb(32, 32, 32) 10%, rgb(15, 15, 15) 100%);
 }
 
 h1 {
-    color: rgb(141, 143, 141);
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 55px;
+  color: rgb(141, 143, 141);
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3.5rem;
 }
 
 #navegacao {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 a {
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    padding: 20px;
-    font-size: 22px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 22px;
 }
 
 .links a:hover {
-    font-size: 30px;
-    transition: 0.3s;
+  font-size: 30px;
+  transition: 0.3s;
+  color: rgb(97, 104, 110);
 }
 
 main {
-    margin-top: 1.5rem;
-    width: 94%;
-    display: flex;
-    align-items: center;
+  margin-top: 1.5rem;
+  width: 94%;
+  display: flex;
+  align-items: center;
 }
 
 .foto1 {
-    width: 27.3%;
+  width: 28%;
 }
 
 h2 {
-    font-size: 3.5rem;
-    color: rgb(141, 143, 141);
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    padding-right: 5rem;
+  font-size: 3.5rem;
+  color: rgb(141, 143, 141);
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  padding-right: 5rem;
 }
 
 .paragrafo {
-    font-size: 1.6rem;
-    margin-left: 1.5rem;
+  font-size: 1.6rem;
+  margin-left: 1.5rem;
 }
 
 .paragrafo::first-letter {
-      color: rgb(141, 143, 141);
-      font-size: 2em;
-      font-weight: bold;
+  color: rgb(141, 143, 141);
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .nome {
-    color: rgb(141, 143, 141);
-    font-size: 1.7rem;
+  color: rgb(141, 143, 141);
+  font-size: 1.7rem;
 }
 
 .divmain {
-    margin-top: -6rem;
+  margin-top: -6rem;
 }
 
 .background {
-    background-color: rgba(141, 143, 141, 0.020)
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .h2projetos {
-    margin-bottom: 5rem;
-    padding-left: 5rem;
-    padding-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 5rem;
+  padding-top: 3rem;
 }
 
 .h2xp {
-    padding-left: 4rem;
-}
-
-.card-img {
-    border-radius: 1.2rem;
-}
-
-.card {
-    width: 21.9rem;
+  padding-left: 4rem;
+  margin-top: 5rem;
 }
 
 .card-title {
-    font-size: 1.8rem;
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: rgb(97, 104, 110);
 }
 
 .card-body {
-    width: 21.72rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 21.72rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .botaoprojeto {
-    border-radius: 1.2rem;
-    margin: 1rem;
-    padding: 8px;
-    background-color: rgb(141, 143, 141)
+  border-radius: 1.2rem;
+  margin: 2rem;
+  padding: 8px;
+  background-color: rgba(141, 143, 141, 0.315);
 }
 
 .divprojetos {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 .cardsxp {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .divxpp {
-    margin-top: 5rem;
-    border-radius: 1rem;
-    width: 19rem;
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.13);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
-    margin-bottom: 1rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  width: 19rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.13);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+  margin-bottom: 1rem;
 }
 
 .h3xp2 {
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2.3rem;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: rgb(165, 171, 177);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.3rem;
 }
 
 .h3xp {
-    font-size: 2rem;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: rgb(165, 171, 177);
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .h4xp {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: rgb(97, 104, 110);
+  display: flex;
+  justify-content: center;
 }
 
 .lixp {
-    padding-right: 2.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-.h2cursos {
-    margin-top: 0rem;
-    margin-bottom: 5rem;
-    padding-left: 5rem;
-    padding-top: 4rem;
-}
-
-.divcursos {
-    display: flex;
+  padding-right: 2.5rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: rgb(97, 104, 110);
 }
 
 .card-imgcursos {
-    padding-bottom: 1rem;
-    width: 15rem;
-    height: 10rem;
+  padding-bottom: 1rem;
+  width: 15rem;
+  height: 8rem;
 }
 
 .card-titlecursos {
-    margin-left: -6rem;
-    font-size: 1.5rem;
+  width: 25rem;
+  margin-left: -6rem;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: rgb(97, 104, 110);
+  text-align: center;
 }
 
 footer {
-    margin-top: 8rem;
-    padding-bottom: 2rem;
+  margin-top: 8rem;
+  padding-bottom: 2rem;
 }
 
 .h2footer {
-    padding-top: 3rem;
-    padding-left: 5rem;
-}
-
-.sociais {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10rem;
-}
-
-.redes {
-    display: flex;
-    align-items: center;
+  padding-top: 3rem;
+  padding-left: 5rem;
 }
 
 .divprojetoscursos {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 5rem;
 }
 
 .skills {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 4rem;
 }
 
 .conteudoskills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .h2skills {
-    margin-top: 3rem;
-    margin-bottom: 6rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+}
+
+.h3skills {
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: rgb(97, 104, 110);
+  padding-bottom: 1rem;
+}
+
+.sociais {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+}
+
+.menufooter {
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+html {
+    scroll-behavior: smooth;
 }
