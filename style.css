@@ -4,6 +4,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   color: white;
 }
 
@@ -16,29 +17,137 @@ h1 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 3.5rem;
-}
-
-#navegacao {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  font-size: 3rem;
 }
 
 a {
-  transition: all 0.3s ease-in-out;
+  font-family: sans-serif;
   text-decoration: none;
-  padding: 20px;
-  font-size: 22px;
 }
 
-.links a:hover {
-  font-size: 30px;
-  transition: 0.3s;
-  color: rgb(97, 104, 110);
+.header {
+  border-bottom: 2px solid white;
+  background: black;
+  padding-inline: 16px;
 }
+
+.nav {
+  max-width: 1400px;
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 20px;
+  color: #fff;
+  padding-block: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  font-size: 26px;
+  color: rgb(141, 143, 141);
+  padding-block: 16px;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+@media (max-width: 1280px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
 
 main {
   margin-top: 1.5rem;
@@ -84,6 +193,12 @@ h2 {
 
 .background {
   background-color: rgba(255, 255, 255, 0.02);
+}
+
+.card-img {
+  width: 22rem;
+  height: 8rem;
+  padding-right: 2rem;
 }
 
 .h2projetos {
@@ -200,16 +315,6 @@ h2 {
   text-align: center;
 }
 
-footer {
-  margin-top: 8rem;
-  padding-bottom: 2rem;
-}
-
-.h2footer {
-  padding-top: 3rem;
-  padding-left: 5rem;
-}
-
 .divprojetoscursos {
   display: flex;
   justify-content: center;
@@ -253,10 +358,36 @@ footer {
   align-items: center;
 }
 
-.menufooter {
+.redes a:hover {
+  font-size: 26px;
+  color: rgb(141, 143, 141);
+  padding-block: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.h2footer {
+  padding-top: 3rem;
+  padding-left: 5rem;
+}
+
+.menufooter a {
     display: flex;
     flex-direction: column;
-    width: 9rem;
+    font-size: 20px;
+    color: #fff;
+    padding-block: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menufooter a:hover {
+  font-size: 26px;
+  color: rgb(141, 143, 141);
+  padding-block: 16px;
 }
 
 .rodape {
@@ -267,4 +398,246 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media (max-width: 1500px) {
+    h1 {
+  font-size: 2.3rem;
+}
+
+#navegacao {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 1.3rem;
+}
+
+.paragrafo {
+  font-size: 1.4rem;
+}
+
+.foto1 {
+  width: 30.9%;
+}
+}
+
+@media (max-width: 1280px) {
+  main {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto1 {
+  width: 40%;
+}
+
+#sobre {
+  width: 87%;
+  margin-left: 2.8rem;
+}
+
+.divmain {
+  margin-top: 0.5rem;
+}
+
+.divprojetos {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsxp {
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.separacao {
+  margin-top: 4rem;
+}
+
+#footer {
+  margin-top: 20rem;
+}
+}
+
+@media (max-width: 834px) {
+#sobre {
+  width: 75%;
+  font-size: 2.4rem;
+  margin-left: 5rem;
+}
+}
+
+@media (max-width: 768px) {
+#sobre {
+  width: 75%;
+  font-size: 2.2rem;
+  margin-left: 5rem;
+}
+
+.card-titlecursos {
+  font-size: 2rem;
+}
+
+#xp {
+  font-size: 2.9rem;
+}
+
+.separacao {
+  margin-top: 1rem;
+}
+
+.lixp {
+  font-size: 0.9rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+}
+
+@media (max-width: 430px) {
+ h1 {
+    font-size: 2.1rem;
+    margin-left: 1rem;
+  }
+
+ h2 {
+    font-size: 2.1rem;
+  }
+
+ .foto1 {
+  width: 60%;
+}
+
+#sobre {
+  width: 80%;
+  font-size: 1.36rem;
+  margin-left: 2.4rem
+}
+
+.divprojetos {
+  margin-left: 3.5rem;
+}
+
+.paragrafo {
+  font-size: 1.2rem;
+  margin-top: -20px;
+}
+
+#projetos {
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+
+.card-img {
+  width: 90%;
+  height: 8rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+#skills {
+  font-size: 1.6rem;
+  height: 0rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: -3rem;
+}
+
+.conteudoskills {
+  margin-bottom: 3rem;
+}
+
+.h3skills {
+  margin-bottom: -0.5rem;
+}
+
+.divprojetoscursos {
+  width: 90%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formacao {
+  font-size: 1.9rem;
+  margin-left: 2.5rem;
+}
+
+.card-imgcursos {
+  margin-left: 3.7rem;
+  margin-bottom: -2rem;
+}
+
+.card-titlecursos {
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+#xp {
+  width: 50%;
+  font-size: 2rem;
+  margin-left: 3.5rem;
+  margin-bottom: -2rem;
+}
+
+.h3xp {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: -1rem;
+}
+
+.h3xp2 {
+  padding-top: 1rem;
+}
+
+.h4xp {
+  font-size: 1rem;
+}
+
+.lixp {
+  font-size: 0.9rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.separacao {
+  margin-top: 4rem;
+}
+
+#footer {
+  margin-top: 20rem;
+}
+
+.redes {
+  width: 18rem;
+  margin-left: 1.2rem;
+}
+
+.menufooter {
+  padding-left: 1rem;
+}
 }

@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turino Developer</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
-
     
-    <nav id="navegacao"> <!--Começo do menu de navegação-->
-            <h1>Turino Developer</h1>
+    <header class="header">
+      <nav class="nav">
+        <h1>Turino Developer</h1>
+        <button class="hamburger"></button>
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#skills">Habilidades atuais</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#xp">Experiência Profissional</a></li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+      </nav>
+    </header> <!--Fim do menu de navegação-->
 
-        <div class="links">
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#skills">Habilidades atuais</a>
-            <a href="#formacao">Formação</a>            
-            <a href="#xp">Experiência profissional</a>
-            <a href="#footer">Contato</a>
-        </div>
-    </nav> <!--Fim do menu de navegação-->
-
-        <hr>
+        
 
         <main> <!--Começo do conteúdo de principal-->
 
@@ -45,7 +47,7 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
 
         <div class="divprojetos">
             <div class="card">
-                <img class="card-img" src="./img/annabella.png" alt="Imagem de capa do card" width="351rem">
+                <img class="card-img" src="./img/annabella.png" alt="Imagem de capa do card">
             <div class="card-body">
                 <h3 class="card-title">Projeto Anna Bella</h3>
                 <a href="#" class="botaoprojeto">Visitar</a>
@@ -53,7 +55,7 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
         </div>
 
         <div class="card">
-                <img class="card-img" src="./img/zoom.png" alt="Imagem de capa do card" width="351rem" height="150rem">
+                <img class="card-img" src="./img/zoom.png" alt="Imagem de capa do card">
             <div class="card-body">
                 <h3 class="card-title">Projeto Zoom</h3>
                 <a href="#" class="botaoprojeto">Visitar</a>
@@ -61,7 +63,7 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
         </div>
 
         <div class="card">
-                <img class="card-img" src="./img/medium.png" alt="Imagem de capa do card" width="351rem" height="150rem">
+                <img class="card-img" src="./img/medium.png" alt="Imagem de capa do card">
             <div class="card-body">
                 <h3 class="card-title">Projeto Medium</h3>
                 <a href="#" class="botaoprojeto">Visitar</a>
@@ -78,31 +80,38 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
         <!--Começo da divisão de skills-->
         <h2 id="skills" class="h2skills">Habilidades atuais</h2>
         <div class="skills">
-        <div class="conteudoskills">
+        
+            <div class="conteudoskills">
         <h3 class="h3skills">HTML</h3>
         <img src="./img/html.png" alt="logohtml" width="70rem" height="70rem">
         </div>
+        
         <div class="conteudoskills">
         <h3 class="h3skills">CSS</h3>
         <img src="./img/css.png" alt="logocss" width="70rem" height="70rem">
         </div>
+        
         <div class="conteudoskills">
         <h3 class="h3skills">JavaScript</h3>
         <img src="./img/js.png" alt="logojs" width="70rem" height="70rem">
         </div>
+        
         <div class="conteudoskills">
         <h3 class="h3skills">Bootstrap</h3>
         <img src="./img/bootstrap.png" alt="logojs" width="70rem" height="70rem">
         </div>
+        
         <div class="conteudoskills">
         <h3 class="h3skills">Git</h3>
         <img src="./img/git.png" alt="logojs" width="70rem" height="70rem">
         </div>
+        
         <div class="conteudoskills">
         <h3 class="h3skills">Github</h3>
         <img src="./img/github.png" alt="logojs" width="70rem" height="70rem">
         </div>
-        </div>
+        
+    </div>
         <!--Fim da divisão de skills-->
       
          <!--Começo da divisão de formação-->
@@ -158,13 +167,15 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
         </div> 
 
         <div class="cardsxp">
-
+            <div class="separacao">
             <div class="divxpp">
             <h3 class="h3xp">Mabel</h3>
             <h4 class="h4xp">Promotor/Vendedor</h4>
+            
         
         <ul>
             <li class="lixp">10/2010 à 02/2012</li>
+            </div>
         </div>
             <div class="divxpp">
             <h3 class="h3xp">Real de Éden</h3>
@@ -191,7 +202,7 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
             
             <div class="rodape">
             
-            <div class="sociais links">
+            <div class="sociais">
 
             <div class="redes"><img src="./img/github.png" alt="logoinstagram" width="70rem">
             <a href="https://github.com/juniorturino"target="_blank">Github</a>
@@ -218,7 +229,7 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
             </div>
             </div>
 
-            <div class="menufooter links">
+            <div class="menufooter">
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#skills">Habilidades atuais</a>
@@ -228,7 +239,9 @@ Minha experiência anterior me ensinou a importância da persistência, do traba
             </div>
             </div>    
         </footer>
-        <!--Fim do rodapé/Contatos-->   
+        <!--Fim do rodapé/Contatos-->  
+        
+        
 
 </body>
 </html>
