@@ -496,6 +496,8 @@ a {
 
 #xp {
   font-size: 2.9rem;
+  width: 40%;
+  margin-left: 11rem;
 }
 
 .separacao {
@@ -506,6 +508,17 @@ a {
   font-size: 0.9rem;
   padding-left: 2rem;
   padding-bottom: 1rem;
+}
+
+.menufooter {
+  margin-top: 3rem;
+  margin-left: 10rem;
+}
+
+.rodape {
+  display: block;
+  width: 80%;
+  margin-left: 9rem;
 }
 }
 
