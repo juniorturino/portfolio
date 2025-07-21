@@ -624,11 +624,17 @@ a {
 }
 
 .separacao {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 #footer {
-  margin-top: 20rem;
+  margin-top: 22rem;
+}
+
+.rodape {
+  display: block;
+  width: 80%;
+  margin-left: 2.5rem;
 }
 
 .redes {
@@ -637,11 +643,12 @@ a {
 }
 
 .menufooter {
-  padding-left: 1rem;
+  margin-top: 3rem;
+  padding-left: 5rem;
 }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 390px) {
   h1 {
     font-size: 1.8rem;
     margin-left: 0.5rem;
