@@ -522,14 +522,15 @@ a {
 }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 429px) {
  h1 {
     font-size: 2.1rem;
     margin-left: 1rem;
   }
 
  h2 {
-    font-size: 2.1rem;
+    font-size: 1rem;
+    width: 55%;
   }
 
  .foto1 {
@@ -537,9 +538,11 @@ a {
 }
 
 #sobre {
-  width: 80%;
-  font-size: 1.36rem;
-  margin-left: 2.4rem
+  width: 55%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 0.3rem;
+  padding-left: 5rem;
 }
 
 .divprojetos {
@@ -552,6 +555,7 @@ a {
 }
 
 #projetos {
+  width: 52%;
   font-size: 1.7rem;
   margin-left: 1.5rem;
 }
@@ -566,7 +570,10 @@ a {
 }
 
 #skills {
-  font-size: 1.6rem;
+  padding-left: 3rem;
+  width:60%;
+  margin-left: 2.5rem;
+  font-size: 1.5rem;
   height: 0rem;
 }
 
@@ -594,8 +601,11 @@ a {
 }
 
 #formacao {
-  font-size: 1.9rem;
-  margin-left: 2.5rem;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
 }
 
 .card-imgcursos {
@@ -641,13 +651,19 @@ a {
 }
 
 #footer {
-  margin-top: 22rem;
+  margin-top: 20rem;
+}
+
+.h2footer {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  margin-left: 1rem;
 }
 
 .rodape {
   display: block;
   width: 80%;
-  margin-left: 2.5rem;
+  margin-left: 1rem;
 }
 
 .redes {
@@ -657,7 +673,6 @@ a {
 
 .menufooter {
   margin-top: 3rem;
-  padding-left: 5rem;
 }
 }
 
@@ -667,13 +682,16 @@ a {
     margin-left: 0.5rem;
   }
 
-  #sobre {
-  width: 80%;
+#sobre {
+  width: 55%;
   font-size: 1.2rem;
-  margin-left: 2.4rem
-  }
+  text-align: center;
+  margin-left: 0.3rem;
+  padding-left: 6rem;
+}
 
   #skills {
+    width: 55%;
   font-size: 1.3rem;
 }
 
@@ -703,5 +721,68 @@ a {
   display: block;
   width: 80%;
   margin-left: 2.5rem;
+}
+}
+
+@media (max-width: 390px) {
+
+#sobre {
+  width: 55%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 0.3rem;
+  padding-left: 5rem;
+}
+
+.h2footer {
+  width: 50%;
+}
+
+#skills {
+  width: 50%;
+  font-size: 1.2rem;
+  padding-left: -1rem;
+}
+
+#projetos {
+  width: 50%;
+}
+}
+
+@media (max-width: 390px) {
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.header {
+  width: 88%;
+}
+
+  #sobre {
+  width: 55%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 0.3rem;
+  padding-left: 5rem;
+}
+
+.h2footer {
+  width: 50%;
+  margin-top: 3rem;
+}
+
+#skills {
+  width: 53%;
+  font-size: 1.2rem;
+  padding-left: -1rem;
+}
+
+.separacao {
+  margin-top: 17rem;
+}
+
+.linharodape {
+  margin-top: 45rem
 }
 }
