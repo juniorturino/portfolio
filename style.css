@@ -365,6 +365,7 @@ h2 {
 }
 
 footer {
+  border-top: 1px solid;
   margin-top: 8rem;
   padding-bottom: 2rem;
 }
@@ -769,7 +770,7 @@ h1 {
 
 .h2footer {
   width: 50%;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 #skills {
@@ -779,10 +780,6 @@ h1 {
 }
 
 .separacao {
-  margin-top: 17rem;
-}
-
-.linharodape {
-  margin-top: 45rem
+  margin-top: 9rem;
 }
 }
