@@ -12,12 +12,20 @@ body {
   background: linear-gradient(90deg, rgb(32, 32, 32) 10%, rgb(15, 15, 15) 100%);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 94%;
+  margin: 3%;
+  margin-top: 0;
+}
+
 h1 {
   color: rgb(141, 143, 141);
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 a {
@@ -147,639 +155,247 @@ a {
   }
 }
 
+.foto1 {
+  width: 70%;
+  border-radius: 12rem;
+}
 
 main {
-  margin-top: 1.5rem;
-  width: 94%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: rgb(141, 143, 141);
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.card-img {
+  width: 18rem;
+}
+
+.divprojetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.botaoprojeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.2rem;
+  margin-bottom: 3rem;
+  padding: 8px;
+  background-color: rgba(141, 143, 141, 0.315);
+  cursor: pointer;
+}
+
+.botaoprojeto:hover {
+  background-color: rgba(240, 248, 255, 0.301);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.conteudoskills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.imagens_skills {
+  width: 4rem;
+}
+
+.card-imgcursos {
+  width: 16rem;
+}
+
+.divprojetoscursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divprojetoscursos .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.divprojetoscursos .card-body {
+  display: flex;
+  text-align: center;
+}
+
+.card_xp {
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 70%;
+  background-color: rgba(141, 143, 141, 0.11);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div_xp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.redes img{
+  width: 3rem;
+}
+
+.redes {
+  margin-left: 2rem;
+  width: 80%;
   display: flex;
   align-items: center;
 }
 
-.foto1 {
-  width: 28%;
-}
-
-h2 {
-  font-size: 3.5rem;
-  color: rgb(141, 143, 141);
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+.menufooter {
+  width: 50%;
+  margin-left: 2rem;
+  margin-top: 2rem;
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menufooter a{
+  transition: all 0.3s ease-in-out;
+}
+
+.menufooter a:hover{
+  font-size: 1.3rem;
+  color: rgb(141, 143, 141);
+}
+
+.direitos_reservados{
+  border-top: 1px solid;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding-right: 5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.7rem;
 }
 
-.paragrafo {
-  font-size: 1.6rem;
-  margin-left: 1.5rem;
-}
-
-.paragrafo::first-letter {
-  color: rgb(141, 143, 141);
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.nome {
-  color: rgb(141, 143, 141);
-  font-size: 1.7rem;
-}
-
-.divmain {
-  margin-top: -6rem;
+html {
+  scroll-behavior: smooth;
 }
 
 .background {
   background-color: rgba(255, 255, 255, 0.02);
 }
 
-.card-img {
-  width: 22rem;
-  height: 8rem;
-  padding-right: 2rem;
+@media (min-width: 768px) {
+  .foto1 {
+  width: 50%;
+  border-radius: 12rem;
 }
 
-.h2projetos {
-  margin-bottom: 3rem;
-  padding-left: 5rem;
-  padding-top: 3rem;
-}
-
-.h2xp {
-  padding-left: 4rem;
-  margin-top: 5rem;
-}
-
-.card-title {
-  font-size: 2rem;
-  padding-top: 1rem;
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1.8rem;
-  color: rgb(97, 104, 110);
-}
-
-.card-body {
-  width: 21.72rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.botaoprojeto {
-  border-radius: 1.2rem;
-  margin: 2rem;
-  padding: 8px;
-  background-color: rgba(141, 143, 141, 0.315);
-}
-
-.divprojetos {
+.rodape{
   display: flex;
   justify-content: center;
+  align-items: center;
   justify-content: space-around;
 }
 
-.cardsxp {
+.menufooter a{
+  width: 50%;
+  margin-bottom: 1.3rem;
+  margin-left: 7rem;
+}
+}
+
+@media (min-width: 1280px) {
+main {
   display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-
-.divxpp {
-  margin-top: 5rem;
-  border-radius: 1rem;
-  width: 19rem;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(128, 128, 128, 0.13);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
-  margin-bottom: 1rem;
-}
-
-.h3xp2 {
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1.5rem;
-  color: rgb(165, 171, 177);
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2.3rem;
-}
-
-.h3xp {
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1.6rem;
-  color: rgb(165, 171, 177);
-  padding-bottom: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.h4xp {
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1.2rem;
-  color: rgb(97, 104, 110);
-  display: flex;
-  justify-content: center;
-}
-
-.lixp {
-  padding-right: 2.5rem;
-  display: flex;
-  justify-content: center;
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1rem;
-  color: rgb(97, 104, 110);
-}
-
-.card-imgcursos {
-  padding-bottom: 1rem;
-  width: 15rem;
-  height: 8rem;
-}
-
-.card-titlecursos {
-  width: 25rem;
-  margin-left: -6rem;
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1.6rem;
-  color: rgb(97, 104, 110);
-  text-align: center;
-}
-
-.divprojetoscursos {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  margin-left: 5rem;
-}
-
-.skills {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  padding-bottom: 4rem;
-}
-
-.conteudoskills {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
-.h2skills {
-  padding-left: 5rem;
-  padding-bottom: 4rem;
-}
-
-.h3skills {
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-  font-size: 1.2rem;
-  color: rgb(97, 104, 110);
-  padding-bottom: 1rem;
-}
-
-.sociais {
-  display: flex;
-  flex-direction: column;
-}
-
-.redes {
-  display: flex;
-  align-items: center;
-}
-
-.redes a:hover {
-  font-size: 26px;
-  color: rgb(141, 143, 141);
-  padding-block: 16px;
-  transition: all 0.3s ease-in-out;
-}
-
-footer {
-  border-top: 1px solid;
-  margin-top: 8rem;
-  padding-bottom: 2rem;
-}
-
-.h2footer {
-  padding-top: 3rem;
-  padding-left: 5rem;
-}
-
-.menufooter a {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: #fff;
-    padding-block: 16px;
-    transition: all 0.3s ease-in-out;
-}
-
-.menufooter a:hover {
-  font-size: 26px;
-  color: rgb(141, 143, 141);
-  padding-block: 16px;
-}
-
-.rodape {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 1500px) {
-    h1 {
-  font-size: 2.3rem;
-}
-
-#navegacao {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.foto1 {
+  width: 30%;
 }
 
 h2 {
-  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
 }
 
-a {
+p {
   font-size: 1.3rem;
 }
 
-.paragrafo {
-  font-size: 1.4rem;
-}
-
-.foto1 {
-  width: 30.9%;
-}
-}
-
-@media (max-width: 1280px) {
-  main {
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 93%;
-  display: flex;
-  flex-direction: column;
-}
-
-.foto1 {
-  width: 40%;
-}
-
-#sobre {
-  width: 87%;
-  margin-left: 2.8rem;
-}
-
-.divmain {
-  margin-top: 0.5rem;
-}
-
 .divprojetos {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cardsxp {
-  width: 80%;
-  height: 60vh;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.separacao {
-  margin-top: 4rem;
-}
-
-#footer {
-  margin-top: 20rem;
-}
-}
-
-@media (max-width: 834px) {
-#sobre {
-  width: 75%;
-  font-size: 2.4rem;
-  margin-left: 5rem;
-}
-}
-
-@media (max-width: 768px) {
-#sobre {
-  width: 75%;
-  font-size: 2.2rem;
-  margin-left: 5rem;
-}
-
-.card-titlecursos {
-  font-size: 2rem;
-}
-
-#xp {
-  font-size: 2.9rem;
-  width: 40%;
-  margin-left: 11rem;
-}
-
-.separacao {
-  margin-top: 1rem;
-}
-
-.lixp {
-  font-size: 0.9rem;
-  padding-left: 2rem;
-  padding-bottom: 1rem;
-}
-
-.menufooter {
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
   margin-top: 3rem;
-  margin-left: 10rem;
-}
-
-.rodape {
-  display: block;
-  width: 80%;
-  margin-left: 9rem;
-}
-}
-
-@media (max-width: 429px) {
- h1 {
-    font-size: 2.1rem;
-    margin-left: 1rem;
-  }
-
- h2 {
-    font-size: 1rem;
-    width: 55%;
-  }
-
- .foto1 {
-  width: 60%;
-}
-
-#sobre {
-  width: 55%;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-left: 0.3rem;
-  padding-left: 5rem;
-}
-
-.divprojetos {
-  margin-left: 3.5rem;
-}
-
-.paragrafo {
-  font-size: 1.2rem;
-  margin-top: -20px;
-}
-
-#projetos {
-  width: 52%;
-  font-size: 1.7rem;
-  margin-left: 1.5rem;
 }
 
 .card-img {
-  width: 90%;
+  width: 18rem;
   height: 8rem;
 }
 
-.card-title {
-  font-size: 1.2rem;
-}
-
-#skills {
-  padding-left: 3rem;
-  width:60%;
-  margin-left: 2.5rem;
-  font-size: 1.5rem;
-  height: 0rem;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-bottom: -3rem;
-}
-
-.conteudoskills {
-  margin-bottom: 3rem;
-}
-
-.h3skills {
-  margin-bottom: -0.5rem;
-}
-
 .divprojetoscursos {
-  width: 90%;
-  margin-left: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#formacao {
-  padding: 0;
-  margin: 0 auto;
-  font-size: 2rem;
-  padding-left: 2rem;
-  padding-top: 3rem;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .card-imgcursos {
-  margin-left: 3.7rem;
-  margin-bottom: -2rem;
-}
-
-.card-titlecursos {
-  font-size: 1.4rem;
-  margin-left: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-#xp {
-  width: 50%;
-  font-size: 2rem;
-  margin-left: 3.5rem;
-  margin-bottom: -2rem;
-}
-
-.h3xp {
-  padding-top: 1rem;
-  font-size: 1.4rem;
-  margin-bottom: -1rem;
-}
-
-.h3xp2 {
-  padding-top: 1rem;
-}
-
-.h4xp {
-  font-size: 1rem;
-}
-
-.lixp {
-  font-size: 0.9rem;
-  padding-left: 2rem;
-  padding-bottom: 1rem;
-}
-
-.separacao {
-  margin-top: 6rem;
-}
-
-#footer {
-  margin-top: 20rem;
-}
-
-.h2footer {
-  font-size: 2rem;
-  padding-bottom: 3rem;
-  margin-left: 1rem;
-}
-
-.rodape {
-  display: block;
-  width: 80%;
-  margin-left: 1rem;
-}
-
-.redes {
-  width: 18rem;
-  margin-left: 1.2rem;
-}
-
-.menufooter {
-  margin-top: 3rem;
-}
-}
-
-@media (max-width: 390px) {
-  h1 {
-    font-size: 1.8rem;
-    margin-left: 0.5rem;
-  }
-
-#sobre {
-  width: 55%;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-left: 0.3rem;
-  padding-left: 6rem;
-}
-
-  #skills {
-    width: 55%;
-  font-size: 1.3rem;
-}
-
-.card-titlecursos {
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
-}
-
-#xp {
-  width: 40%;
-  font-size: 2rem;
-  margin-left: 3.5rem;
-  margin-bottom: -2rem;
-}
-
-.separacao {
-  margin-top: 8rem;
-}
-
-#footer {
-  margin-top: 26rem;
-  display: flex;
-  display: block;
-}
-
-.rodape {
-  display: block;
-  width: 80%;
-  margin-left: 2.5rem;
-}
-}
-
-@media (max-width: 390px) {
-
-#sobre {
-  width: 55%;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-left: 0.3rem;
-  padding-left: 5rem;
-}
-
-.h2footer {
-  width: 50%;
-}
-
-#skills {
-  width: 50%;
-  font-size: 1.2rem;
-  padding-left: -1rem;
-}
-
-#projetos {
-  width: 50%;
-}
-}
-
-@media (max-width: 390px) {
-
-h1 {
-  font-size: 1.5rem;
-}
-
-.header {
-  width: 88%;
-}
-
-  #sobre {
-  width: 55%;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-left: 0.3rem;
-  padding-left: 5rem;
-}
-
-.h2footer {
-  width: 50%;
-  margin-top: 1rem;
-}
-
-#skills {
-  width: 53%;
-  font-size: 1.2rem;
-  padding-left: -1rem;
-}
-
-.separacao {
-  margin-top: 9rem;
+  height: 9rem;
 }
 }
