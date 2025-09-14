@@ -156,7 +156,7 @@ a {
 }
 
 .foto1 {
-  width: 70%;
+  width: 60%;
   border-radius: 12rem;
 }
 
@@ -229,10 +229,31 @@ p {
   padding: 8px;
   background-color: rgba(141, 143, 141, 0.315);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .botaoprojeto:hover {
   background-color: rgba(240, 248, 255, 0.301);
+  font-size: 1.1rem;
+}
+
+.botaoRepositorio {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 16px;
+  background-color: rgba(141, 143, 141, 0.315);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.botaoRepositorio:hover{
+  background-color: rgba(240, 248, 255, 0.301);
+  font-size: 1.1rem;
 }
 
 .skills {
@@ -368,7 +389,7 @@ html {
 
 @media (min-width: 768px) {
   .foto1 {
-  width: 50%;
+  width: 40%;
   border-radius: 12rem;
 }
 
