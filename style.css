@@ -156,7 +156,8 @@ a {
 }
 
 .foto1 {
-  width: 40%;
+  border-radius: 30%;
+  width: 50%;
 }
 
 main {
